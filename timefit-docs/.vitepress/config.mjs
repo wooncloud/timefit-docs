@@ -1,4 +1,5 @@
 import { defineConfig } from 'vitepress'
+import { getSidebar } from './sidebar.mjs'
 
 export default defineConfig({
   title: 'Timefit Docs',
@@ -15,33 +16,11 @@ export default defineConfig({
     
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Getting Started', link: '/getting-started' },
+      { text: 'Docs', link: '/docs/' },
       { text: 'API Reference', link: '/api/' },
-      { text: 'Guide', link: '/guide/' }
     ],
 
-    sidebar: {
-      '/guide/': [
-        {
-          text: 'Guide',
-          items: [
-            { text: 'Introduction', link: '/guide/' },
-            { text: 'Installation', link: '/guide/installation' },
-            { text: 'Configuration', link: '/guide/configuration' }
-          ]
-        }
-      ],
-      '/api/': [
-        {
-          text: 'API Reference',
-          items: [
-            { text: 'Overview', link: '/api/' },
-            { text: 'Authentication', link: '/api/auth' },
-            { text: 'Endpoints', link: '/api/endpoints' }
-          ]
-        }
-      ]
-    },
+    sidebar: getSidebar(),
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/your-username/timefit-docs' }
@@ -49,7 +28,7 @@ export default defineConfig({
 
     footer: {
       message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2024 Timefit Team'
+      copyright: 'Copyright © 2025 Timefit Team'
     },
 
     search: {
