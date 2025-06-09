@@ -1,1 +1,0 @@
-import{_ as t,c as a,o as r,j as o}from"./chunks/framework.BHC169Ev.js";const f=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"README.md","filePath":"README.md"}'),s={name:"README.md"};function n(c,e,i,p,d,l){return r(),a("div",null,e[0]||(e[0]=[o("p",null,"Timefit",-1)]))}const E=t(s,[["render",n]]);export{f as __pageData,E as default};
