@@ -1,5 +1,4 @@
-![[Pasted image 20250609211356.png]]
-
+![](../img/Pasted%20image%2020250609212613.png)
 ## JWT + OAuth 2.0
 
 1. OAuth로 받은 사용자 정보를 검증 후 자체 JWT 토큰 발급

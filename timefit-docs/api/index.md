@@ -1,26 +1,51 @@
-# API Reference
+# Architecture
 
-Complete API documentation for Timefit.
+[Timefit 백엔드 아키텍처](../docs/Timefit%20백엔드%20아키텍처.md)
 
-## Overview
+---
+# API
+[1. Response & Error 규격](1.%20Response%20&%20Error%20규격.md)
 
-The Timefit API provides programmatic access to all core functionality.
+## 🔴 **1단계: MVP 핵심 기능**
 
-## Base URL
+[2.인증 관련](2.%20인증%20관련.md)
 
-```
-https://api.timefit.com/v1
-```
+[3. 업체 관리](3.%20업체%20관리.md)
 
-## Authentication
+[4. 예약 관리](4.%20예약%20관리.md)
 
-All API requests require authentication. See the [Authentication](./auth) section for details.
+[5. 비즈니스 관리 🚧](5.%20비즈니스%20관리%20🚧.md)
 
-## Available Endpoints
+## 🟡 **2단계: 주요 기능**
 
-- [Authentication](./auth)
-- [Endpoints](./endpoints)
+[채팅 관리 ⚠️](#)
 
-## Rate Limiting
+[알림 관리 ⚠️](#)
 
-API requests are limited to 1000 requests per hour per API key. 
+[고객 정보 관리](#)
+
+## 🟢 **3단계: 확장 기능**
+
+[검증 관련 ⚠️](#)
+
+[시스템 관리 ⚠️](#)
+
+---
+# Table
+
+🔴 **1단계: MVP 핵심 기능**
+
+[DB Table 명세서 (사용자, 비즈니스, 영업시간, 서비스, 예약)](#)
+
+🟡 **2단계: 주요 기능**
+
+1. **chat** (채팅방)
+2. **message** (채팅 메시지)
+3. **notification** (알림)
+4. **customer_note** (고객 메모)
+5. **customer_tag** (고객 태그)
+
+🟢 **3단계: 확장 기능**
+
+1. **audit_log** (변경 이력 추적)
+
